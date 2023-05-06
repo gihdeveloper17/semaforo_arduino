@@ -1,0 +1,32 @@
+/* Semáforo 
+autor:Giovanna dos Santos Ferreira
+data:05/04/2022 */
+
+
+void setup()
+  
+{
+  pinMode (13,OUTPUT);//LED Vermelho
+  pinMode(12,OUTPUT);//LED Amarelo
+  pinMode (11,OUTPUT);//LED Verde
+  
+}
+
+void loop()//MODO DE FAZER
+{
+ digitalWrite(13,HIGH);//ligue a porta 13
+  digitalWrite(12,LOW);//deixe desligada a porta 12
+  digitalWrite(11,LOW);//deixe desligada a porta 11
+  delay(2000);//aguarde 2 segundos
+  
+  digitalWrite(13,LOW);//deixe desligada a porta 13
+  digitalWrite(12,HIGH);//ligue a porta 12
+  digitalWrite(11,LOW);//deixe desligada a porta 11
+  delay(1000);
+  
+  digitalWrite(13,LOW);//deixe desligada a porta 13
+  digitalWrite(12,LOW);//deixe desligada a porta 12
+  digitalWrite(11,HIGH);//ligue a porta 11
+  delay(2000);//aguarde 2 segundos
+  
+}
